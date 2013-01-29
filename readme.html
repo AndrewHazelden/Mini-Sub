@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>readme.md</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body{
+    margin: 0 auto;
+    font-family: Georgia, Palatino, serif;
+    color: #444444;
+    line-height: 1;
+    max-width: 960px;
+    padding: 5px;
+}
+h1, h2, h3, h4 {
+    color: #111111;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 16px;
+    padding: 0;
+}
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 22px;
+    margin: 20px 0 6px;
+}
+h3 {
+    font-size: 21px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+a {
+    color: #0099ff;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+a:hover {
+    text-decoration: none;
+    color: #ff6600;
+}
+a:visited {
+    color: purple;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+li {
+    line-height: 24px;
+    margin-left: 44px;
+}
+li ul, li ul {
+    margin-left: 24px;
+}
+p, ul, ol {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 540px;
+}
+pre {
+    padding: 0px 24px;
+    max-width: 800px;
+    white-space: pre-wrap;
+}
+code {
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+}
+aside {
+    display: block;
+    float: right;
+    width: 390px;
+}
+blockquote {
+    border-left:.5em solid #eee;
+    padding: 0 2em;
+    margin-left:0;
+    max-width: 476px;
+}
+blockquote  cite {
+    font-size:14px;
+    line-height:20px;
+    color:#bfbfbf;
+}
+blockquote cite:before {
+    content: '\2014 \00A0';
+}
+
+blockquote p {  
+    color: #666;
+    max-width: 460px;
+}
+hr {
+    width: 540px;
+    text-align: left;
+    margin: 0 auto 0 0;
+    color: #999;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+}
+/* override default chrome & firefox settings */
+input:not([type="image"]), textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+label,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+input[type=text],
+input[type=password],
+textarea,
+select {
+  display: inline-block;
+  width: 210px;
+  padding: 4px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  height: 18px;
+  color: #808080;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+select, input[type=file] {
+  height: 27px;
+  line-height: 27px;
+}
+textarea {
+  height: auto;
+}
+
+/* grey out placeholders */
+:-moz-placeholder {
+  color: #bfbfbf;
+}
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+input[type=text],
+input[type=password],
+select,
+textarea {
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  outline: none;
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+/* buttons */
+button {
+  display: inline-block;
+  padding: 4px 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #0064cd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));
+  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));
+  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -o-linear-gradient(top, #049cdb, #0064cd);
+  background-image: linear-gradient(top, #049cdb, #0064cd);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #004b9a;
+  border-bottom-color: #003f81;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+  border-color: #0064cd #0064cd #003f81;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+button:hover {
+  color: #fff;
+  background-position: 0 -15px;
+  text-decoration: none;
+}
+button:active {
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* CSS stylesheet is based on Kevin Burke's Markdown.css project (http://kevinburke.bitbucket.org/markdowncss) */
+</style>
+</head>
+<body>
+<h1>Sub Game for IRIX/Mac/Linux V1.0</h1>
+
+<p><em>Created by Andrew Hazelden</em>  </p>
+
+<hr />
+
+<p>email: <a href="mailto:andrew@andrewhazelden.com">andrew@andrewhazelden.com</a><br />
+web: <a href="http://www.andrewhazelden.com/blog">www.andrewhazelden.com/blog</a>  </p>
+
+<hr />
+
+<h2>Game Descripton</h2>
+
+<p>In the Mini-Sub game you have navigate a dangerous ocean filled with sea mines. You can use your torpedoes to clear a path through the mine field. Along the way you can pickup extra lives and more torpedoes.</p>
+
+<p>The red sea mines take 1 torpedo hit to detonate and the grey sea mines take 2 torpedo hits to detonate.</p>
+
+<h2>Controls</h2>
+
+<p>The yellow mini-sub is controlled by the cursor keys. 
+Press the spacebar to fire a torpedo.</p>
+
+<p>Press the TAB key to switch between fullscreen mode and windowed mode
+Press the ESC key to quit the game.
+Press the m key to mute the audio soundtrack.</p>
+
+<p>You can change the game resolution from the command line:</p>
+
+<p>To switch the display to 1024x768 in fullscreen mode:<br />
+<code>./irix_mini-sub --window 1024 768 -fullscreen</code></p>
+
+<p>To run the game at 1280x720 in windowed mode:<br />
+<code>./irix_mini-sub --window 1024 768</code></p>
+
+<p><code>Usage: mini-sub [options]<br />
+Options:<br />
+  --window &lt;width&gt; &lt;height&gt; [-fullscreen]<br />
+    Set the size of the main window</code>  </p>
+
+<h2>Screenshots</h2>
+
+<p><img src="screenshots/Mini-Sub_Game_on_MaxxDesktop1.jpg" alt="Starting the Game" /></p>
+
+<p><img src="screenshots/Mini-Sub_Game_on_MaxxDesktop2.jpg" alt="Firing a Torpedo" /></p>
+
+<h2>Version History</h2>
+
+<p>Version 1.0 Released Jan 29, 2013<br />
+This is the first version of the Mini-Sub game released for IRIX/Mac/Linux. It was created for the Winter Warmup 2013 RetroChallenge. This game is based upon the open source Mini-Sub game demo created for the Mikromedia dsPIC33 16-bit embedded computer.</p>
+
+<h2>IRIX Notes:</h2>
+
+<p>The IRIX executable is called "irix_mini-sub". You need to have SDL installed for it to work on IRIX. You can download <code>SDL, libsdl_image, libsdl_mixer,  libsdl_gfx-framework, and libsdl_ttf</code> from Nekoware.</p>
+
+<p>The IRIX version of the mini-sub game can be compiled with GCC on IRIX 6.5.</p>
+
+<p>To compile it on IRIX run:<br />
+<code>cd "Mini-Sub/source_code"</code><br />
+<code>make -f Makefile.irix go</code></p>
+
+<p>Main Nekoware Page:<br />
+<a href="http://www.nekochan.net/what-is-nekowar.html">http://www.nekochan.net/what-is-nekowar.html</a></p>
+
+<p>Primary Nekoware Mirror:<br />
+<a href="http://nekoware.dustytech.net/index.php?path=current/">http://nekoware.dustytech.net/index.php?path=current/</a></p>
+
+<h2>Mac Notes:</h2>
+
+<p>For the Mac alpha version you need to start it from the command line so the program knows where the image resources are. If you double click on the file mac_mini-sub file you will get an error. I am working on improving my SDL image loading code to fix this issue.</p>
+
+<p>To start the game enter the following at the terminal:<br />
+<code>cd "Mini-Sub/game"</code><br />
+<code>./mac_mini-sub</code>  </p>
+
+<p>To compile it on Mac OS X run:<br />
+<code>cd "Mini-Sub/source_code"</code><br />
+<code>make -f Makefile.osx go</code>  </p>
+
+<p>You can install the required SDL libraries using Mac Ports and xcode:<br />
+<a href="http://www.macports.org/install.php">http://www.macports.org/install.php</a></p>
+
+<p>With Mac Ports installed run the following command from the terminal:<br />
+<code>sudo port install libsdl-framework libsdl_image-framework libsdl_mixer-framework libsdl_gfx-framework  libsdl_ttf-framework</code> </p>
+
+<h2>Linux Notes:</h2>
+
+<p>The Linux executable is called "linux_mini-sub". You need to have SDL installed for it to run on Linux. </p>
+
+<p>To compile the game on Linux run:<br />
+<code>cd "Mini-Sub/source_code"</code><br />
+<code>make -f Makefile.linux go</code> </p>
+
+<p>You can use YUM to install the SDL graphics libraries with the help of the EPEL repository:<br />
+<a href="http://fedoraproject.org/wiki/EPEL">http://fedoraproject.org/wiki/EPEL</a></p>
+
+<p>If you are running Centos 6.3 you can use this package to automatically add the EPEL repo to YUM:<br />
+<a href="http://fedora.mirror.nexicom.net/epel/6/i386/repoview/epel-release.html">http://fedora.mirror.nexicom.net/epel/6/i386/repoview/epel-release.html</a></p>
+
+<p>With EPEL installed run the following command from the terminal:<br />
+<code>yum install gcc SDL-devel SDL_image-devel SDL_mixer-devel SDL_gfx-devel SDL_ttf-devel</code> </p>
+
+<hr />
+
+<p>Copyright (c) 2013 Andrew Hazelden. </p>
+
+<p>The Mini-Sub game is released under a Creative Commons Attribution Non-commercial Share Alike (by-nc-sa) license:<br />
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US</a></p>
+
+<p>The Mini-Sub game uses the display font "Xolonium" which is licensed under the GPL 2.0 license.</p>
+
+<p>The Mini-Sub game uses the soundtrack "Gameboy" by Pavese from the album "Best of Tony-B Machine" which is licensed under the Creative Commons Attribution Non-commercial Share Alike (by-nc-sa) license:<br />
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</a></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

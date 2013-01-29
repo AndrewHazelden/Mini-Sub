@@ -1,0 +1,30 @@
+# Mini-Sub Version 1.0 Makefile for Solaris
+# Jan 2013
+# Created by Andrew Hazelden
+# Email andrew@andrewhazelden.com
+
+# compile tip: try using this command to compile the program:
+# make -f Makefile.sunos go
+
+INCLUDE = -I/opt/csw/include/SDL -I/usr/local/include/SDL
+LIBDIR  = -L/opt/csw/lib -L/usr/local/lib
+
+#COMPILERFLAGS =  `sdl-config --cflags --libs`
+COMPILERFLAGS=-g -O2
+
+CC = /opt/sfw/bin/gcc
+CFLAGS = $(COMPILERFLAGS) $(INCLUDE)
+LIBRARIES = -lSDL -lSDL_gfx -lSDL_ttf -lSDL_mixer -lm
+
+
+all:  mini-sub
+
+mini-sub : mini-sub.o
+	$(CC) $(CFLAGS) -o sun_mini-sub mini-sub.c  $(LIBDIR) $(LIBRARIES)
+  mv sun_mini-sub ../game
+
+clean:
+	rm -f sun_mini-sub *.o
+	
+
+go: clean mini-sub

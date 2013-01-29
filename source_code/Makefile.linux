@@ -1,0 +1,32 @@
+# Mini-Sub Version 1.0 Makefile for Linux
+# Jan 2013
+# Created by Andrew Hazelden
+# Email andrew@andrewhazelden.com
+
+# compile tip: try using this command to compile the program:
+# make -f Makefile.linux go
+
+INCLUDE = -I/usr/include -I/usr/include/SDL
+LIBDIR  =  
+
+COMPILERFLAGS =  `sdl-config --cflags --libs`
+
+CC = gcc
+CFLAGS = $(COMPILERFLAGS) $(INCLUDE)
+
+#LIBRARIES = -lSDL -lSDL_gfx -lSDL_ttf -lSDL_mixer -lm
+LIBRARIES = -lSDL_gfx -lSDL_ttf -lSDL_mixer -lm
+
+
+all:  mini-sub
+
+mini-sub : mini-sub.o
+	$(CC) $(CFLAGS) -o linux_mini-sub mini-sub.c $(LIBDIR) $(LIBRARIES) 
+	cp linux_mini-sub ../game 
+
+clean:
+	rm -f linux_mini-sub *.o
+	
+go: clean mini-sub
+
+

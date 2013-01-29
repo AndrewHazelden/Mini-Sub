@@ -1,0 +1,28 @@
+# Mini-Sub Version 1.0 Makefile for IRIX 6.5
+# Jan 2013
+# Created by Andrew Hazelden
+# Email andrew@andrewhazelden.com
+
+# compile tip: try using this command to compile the program:
+# make -f Makefile.irix go
+
+INCLUDE = -I/usr/nekoware/include/SDL
+LIBDIR  = -L/usr/nekoware/lib -L/usr/lib32/
+
+#COMPILERFLAGS =  `sdl-config --cflags --libs`
+
+CC = /usr/nekoware/bin/gcc
+CFLAGS = $(COMPILERFLAGS) $(INCLUDE)
+LIBRARIES = -lSDL -lSDL_gfx -lSDL_ttf -lSDL_mixer -lm
+
+all:  mini-sub
+
+mini-sub : mini-sub.o
+	$(CC) $(CFLAGS) -o irix_mini-sub  mini-sub.c $(LIBDIR) $(LIBRARIES)
+	cp irix_mini-sub ../game
+
+clean:
+	rm -f irix_mini-sub *.o
+	
+
+go: clean mini-sub
