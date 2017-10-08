@@ -1,8 +1,8 @@
 # Mini-Sub Game for IRIX V1.0 #
 Created by Andrew Hazelden
 ----------------------------------
-email: andrew@andrewhazelden.com
-web: www.andrewhazelden.com/blog
+email: andrew@andrewhazelden.com  
+web: www.andrewhazelden.com/blog  
 ----------------------------------
 
 ## Game Description ##
@@ -92,25 +92,8 @@ yum install gcc SDL-devel SDL_image-devel SDL_mixer-devel SDL_gfx-devel SDL_ttf-
 
 Copyright (c) 2013 Andrew Hazelden. 
 
-The Mini-Sub game is released under a Creative Commons license:
-Attribution Non-commercial Share Alike (by-nc-sa)
-http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US
-
-
-The Mini-Sub game uses the display font "Xolonium" which is licensed under the GPL 2.0 license.
-
-The Mini-Sub game uses the soundtrack "Gameboy" by Pavese from the album "Best of Tony-B Machine" which is licensed under the Creative Commons License:
-http://creativecommons.org/licenses/by-nc-sa/3.0/
-
-
-
---------------------------------
-
-Copyright (c) 2013 Andrew Hazelden. 
-
 The Mini-Sub game is released under a Creative Commons Attribution Non-commercial Share Alike (by-nc-sa) license:  
 [http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US](http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US)
-
 
 The Mini-Sub game uses the display font "Xolonium" which is licensed under the GPL 2.0 license.
 
