@@ -1,16 +1,16 @@
-#Mini-Sub Game for IRIX V1.0
+# Mini-Sub Game for IRIX V1.0 #
 Created by Andrew Hazelden
 ----------------------------------
 email: andrew@andrewhazelden.com
 web: www.andrewhazelden.com/blog
 ----------------------------------
 
-##Game Description
+## Game Description ##
 In the Mini-Sub game you have to navigate a dangerous ocean filled with sea mines. You can use your torpedoes to clear a path through the mine field. Along the way you can pickup extra lives and more torpedoes.
 
 The red sea mines take 1 torpedo hit to detonate and the grey sea mines take 2 torpedo hits to detonate.
 
-##Controls
+## Controls ##
 The yellow mini-sub is controlled by the cursor keys. 
 Press the spacebar to fire a torpedo.
 
@@ -29,18 +29,18 @@ To switch the display to 1024x768 in fullscreen mode:
 ./irix_mini-sub --window 1024 768 -fullscreen
 
 
-##Screenshots
+## Screenshots ##
 
 ![Starting the Game](screenshots/Mini-Sub_Game_on_MaxxDesktop1.jpg)
 
 ![Firing a Torpedo](screenshots/Mini-Sub_Game_on_MaxxDesktop2.jpg)
 
 
-##Version History
+## Version History ##
 Version 1.0 Released Jan 29, 2013  
 The first version of Mini-Sub game for IRIX/Mac/Linux. It was created for the Winter Warmup 2013 RetroChallenge. This game is based upon the open source Mini-Sub game demo created for the Mikromedia dsPIC33 16-bit embedded computer.
 
-##IRIX Notes:
+## IRIX Notes: ##
 The IRIX executable is called "irix_mini-sub". You need to have SDL installed for it to work on IRIX. You can download SDL, libsdl_image, libsdl_mixer,  libsdl_gfx-framework, and libsdl_ttf from Nekoware.
 
 Main Nekoware Page:
@@ -55,7 +55,7 @@ To compile it on IRIX run:
 make -f Makefile.irix go
 
 
-##Mac Notes:
+## Mac Notes: ##
 For the Mac alpha version you need to start it from the command line so the program knows where the image resources are. If you double click on the file mac_mini-sub file you will get an error. I am working on improving my SDL image loading code to fix this issue.
 
 
@@ -73,9 +73,7 @@ http://www.macports.org/install.php
 With Mac Ports installed run the following command from the terminal:
 sudo port install libsdl-framework libsdl_image-framework libsdl_mixer-framework libsdl_gfx-framework  libsdl_ttf-framework 
 
-
-
-##Linux Notes:
+## Linux Notes: ##
 The Linux executable is called "linux_mini-sub". You need to have SDL installed for it to run on Linux. 
 
 To compile the game on Linux run:
@@ -102,7 +100,7 @@ http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US
 The Mini-Sub game uses the display font "Xolonium" which is licensed under the GPL 2.0 license.
 
 The Mini-Sub game uses the soundtrack "Gameboy" by Pavese from the album "Best of Tony-B Machine" which is licensed under the Creative Commons License:
-ttp://creativecommons.org/licenses/by-nc-sa/3.0/
+http://creativecommons.org/licenses/by-nc-sa/3.0/
 
 
 
